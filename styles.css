@@ -1,0 +1,331 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://i.pinimg.com/736x/5c/ee/af/5ceeafdc811d2269821fb03df29374ff.jpg);
+    margin: 0;
+    padding: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#app {
+    max-width: 1010px;
+    max-height: auto;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-top: 0;
+    margin-bottom: 45px;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #050505;
+}
+
+.container {
+    display: flex; 
+    gap: 10px; 
+}
+
+.preto {
+    transition: 0.75s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 65px;
+    margin: 0 10px; 
+    font-family: Arial;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: small;
+    border-radius: 20px;
+    position: relative; 
+    overflow: hidden; 
+    margin-top: 0.5px;
+    text-align: center;
+}
+
+.branco {
+    transition: 0.75s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 65px;
+    margin: 0 10px; 
+    font-family: Arial;
+    background-color: white;
+    color: black;
+    font-size: small;
+    border-radius: 20px;
+    position: relative; 
+    overflow: hidden; 
+    margin-top: 0.5px;
+    text-align: center;
+}
+
+.branco:hover, .preto:hover {
+    transition: 0.75s;
+    height: 325px;
+    padding: 30px;
+    font-size: 15px;
+    transition-delay: 0ms;
+    text-align: center;
+}
+
+
+.preto img, .branco img {
+    opacity: 0; 
+    visibility: hidden; 
+    transition: opacity 0.5s, visibility 0.5s; 
+    
+}
+
+.preto:hover img, .branco:hover img {
+    opacity: 1; 
+    visibility: visible; 
+}
+
+header {
+    color: white;
+    background-color: #050505;
+    padding: 20px 0;
+    width: calc(100% + 40px); 
+    margin-left: -20px; 
+    margin-right: -20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 30px;
+}
+
+.instrucao {
+    display: flex;
+    margin: 20px 0; 
+}
+
+#image {
+    transition-delay: 0ms;
+    width: 50px;
+    height: 50px;
+}
+
+#titu {
+    width: 125px;
+    height: 125px;
+}
+
+.titulo {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+}
+
+header > a {
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+#tt1{
+    font-size: 45px;
+    font-family: "Oswald", sans-serif;
+}
+
+#tt2{
+  margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-family: "Oswald", sans-serif;
+    color: #222222;
+}
+
+
+.par {
+    padding: 5px;
+    border-radius: 10px;
+    width: 1000px;
+    height: 150px;
+    background-color: #f0f0f0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 1px 1px 11px 6px rgba(232,232,232,1);
+    
+  }
+  
+  .impar {
+    padding: 5px;
+    border-radius: 10px;
+    width: 1000px;
+    height: 175px;
+    background-color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 1px 1px 11px 6px rgba(232,232,232,1);
+    margin-top: 30px;
+  }
+
+  #progresuo{ 
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1050px; 
+    height: 70px; 
+    background-color: #050505; 
+    text-align: right;
+  }
+
+  /* eu amaldiçoo a vida de quem falar mal do meu codigo */
+  .progress-container {
+    max-width: 1000px;
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    position: relative;
+    margin: 20px 20px 0 20px;
+    
+  
+  }
+  
+  .progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    transition: width 0.5s;
+  }
+  
+  #progressText {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: rgb(201, 201, 201);
+    opacity: 50%;
+    margin-top: 10px;
+  }
+
+  #submit-part2 , #submit-part1{
+    margin-top: 30px;
+  }
+
+  label {
+    transition: 0.30s;
+    font-size: 18px;
+    opacity: 75%;
+  
+  }
+  
+
+
+  label:hover {
+    transition: 0.30s;
+    font-size: 19px;
+    opacity: 1;
+  }
+  
+  input[type="radio"] {
+    appearance: none; 
+    transition: 0.30s;
+    width: 10px; 
+    height: 10px; 
+    border-radius: 50%; 
+    background-color: rgb(255, 255, 255);
+    cursor: pointer; 
+    border: #050505 solid 1px;
+  }
+  
+  input[type="radio"]:hover {
+    background-color: rgb(43, 43, 43); 
+    transition: 0.30s;
+  }
+  
+  input[type="radio"]:checked {
+    background-color: rgb(43, 43, 43); 
+  }
+  
+  input[type="radio"]:checked::before {
+    content: ""; 
+    display: block;
+    width: 10px;
+    height: 10px; 
+    border-radius: 50%; 
+    background-color: rgb(43, 43, 43); 
+    top: 5px;
+    left: 5px;
+  }
+
+#op{
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+*{
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* não acredito que acordei 6 h da manhã para fazer isso */
+
+button{
+  margin-top: 45px;
+  width: 150px;
+  height: 45px;
+  padding: 10px;
+  box-shadow: 2px -1px 69px -14px rgba(51,51,51,1);
+}
+
+.feumatico{
+  width: 250px;
+  height: 250px;
+  background-color: #050505;
+  
+}
+.colerico{
+  width: 250px;
+  height: 250px;
+  background-color: #050505;
+  
+}
+.melancolico{
+  width: 250px;
+  height: 250px;
+  background-color: #050505;
+  
+}
+.sanguineo{
+  width: 250px;
+  height: 250px;
+  background-color: #050505;
+  
+}
+
+#tt3{
+  margin-top: -40px;
+  font-size: 20px;
+  color: #969696;
+  margin-bottom: 30px;
+}
+
+
+#resultar{
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Terminei yepiiiii */
